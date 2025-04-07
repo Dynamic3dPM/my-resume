@@ -307,6 +307,6 @@
 
   .v-card .v-btn:hover {
     transform: scale(1.1); /* Slightly enlarge the button on hover */
-    background-color: lighten(#1976d2, 10%); /* Lighten the background color on hover */
+    background-color: #2196f3; /* Use a lighter color directly */
   }
   </style>
