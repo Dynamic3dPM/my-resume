@@ -275,6 +275,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add smooth transition for scaling and shadow */
+  }
+
+  .v-card:hover {
+    transform: translateY(-10px); /* Move the card slightly upward on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
   }
   
   .v-img {
