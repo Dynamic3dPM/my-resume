@@ -127,7 +127,7 @@
   
   const projects = [
     {
-      title: 'FFP Invest Alert & Newsletter System',
+      title: 'FFP Invest    ',
       subtitle: 'Project Manager & Lead Developer',
       duration: 'OCT 2024 - Present',
       status: 'current',
@@ -149,7 +149,7 @@
     {
       title: 'PMP Audio Study Guide',
       subtitle: 'Mobile App for PMP Exam Prep',
-      duration: 'Jul 2023 - Jul 2024',
+      duration: 'Past Project (Completed)',
       status: 'past',
       image: pmpStudyGuideImage,
       highlights: [
@@ -259,6 +259,8 @@
   
   h1 {
     font-family: $font-family-times;
+    text-align: center; // Center the title
+    margin-bottom: 2rem; // Add more spacing below the title
   }
   
   h2 {
@@ -277,5 +279,15 @@
   
   .v-img {
     object-fit: contain; /* Ensures the image fits within the container */
+  }
+
+  .v-card p.text-h6 {
+    text-align: center; // Ensure the title of the card is aligned to the left
+    margin-bottom: 1rem; // Add spacing below the title
+    
+  }
+
+  .v-card .v-btn {
+    margin: 0 auto; // Center the button horizontally
   }
   </style>
