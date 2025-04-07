@@ -279,6 +279,11 @@
   
   .v-img {
     object-fit: contain; /* Ensures the image fits within the container */
+    transition: transform 0.3s ease-in-out; /* Add smooth transition for scaling */
+  }
+
+  .v-img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
   }
 
   .v-card p.text-h6 {
@@ -288,6 +293,14 @@
   }
 
   .v-card .v-btn {
-    margin: 0 auto; // Center the button horizontally
+    margin: 0 auto; /* Center the button horizontally */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Add smooth transition for scaling and color */
+    width: 100%; /* Make the button responsive */
+    max-width: 200px; /* Set a maximum width for the button */
+  }
+
+  .v-card .v-btn:hover {
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    background-color: lighten(#1976d2, 10%); /* Lighten the background color on hover */
   }
   </style>
