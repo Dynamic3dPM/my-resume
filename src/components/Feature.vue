@@ -62,19 +62,19 @@
     {
       title: 'Proven Project Leadership',
       subtitle: 'PMP® Certified with 18+ Years of Experience',
-      content: 'I deliver complex projects on time and within budget, leveraging my PMP certification and nearly two decades in the U.S. Army. From agile software development to creating the globally-used Ask Chief app, I drive results with precision and innovation.',
+      content: 'I spearhead complex projects with precision, delivering on time and within budget. My PMP certification and nearly two decades in the U.S. Army fuel my ability to manage agile software initiatives and create impactful solutions like the globally-used Ask Chief app.',
       icon: 'mdi-briefcase-check',
     },
+      {
+    title: 'Network & Cybersecurity Expertise',
+    subtitle: 'Security+ Certified Network Specialist',
+    content: 'As an Army network manager, I oversee the setup and maintenance of critical communication networks, ensuring secure data flow across local and global systems. I configure equipment like Brocade, Juniper, and Cisco, troubleshoot issues, and implement protections to keep operations running and safe from cyber attacks.',
+    icon: 'mdi-shield-lock',
+  },
     {
-      title: 'Network & Cybersecurity Mastery',
-      subtitle: 'Security+ Certified Network Technician',
-      content: 'Specializing in LAN/WAN infrastructure and VM deployment (logging, SNMP, domain controllers), I strengthen networks using Brocade, Juniper, and Cisco expertise. My focus on cybersecurity ensures robust, threat-resistant systems.',
-      icon: 'mdi-shield-lock',
-    },
-    {
-      title: 'AI-Driven Full-Stack Innovation',
-      subtitle: 'AWS, Flutter, Vue.js, and More',
-      content: 'I architect scalable solutions with AI, AWS services, and full-stack technologies like Flutter, Expo, Vue.js, Python, Docker, React, and React Native. As the founder of TK Ingenuity Solutions, I transform concepts into cutting-edge, cloud-powered applications.',
+      title: 'AI-Powered Full-Stack Solutions',
+      subtitle: 'AWS, Flutter, Vue.js, and Beyond',
+      content: 'As the founder of TK Ingenuity Solutions, I build scalable, cloud-native applications with AI integration, leveraging AWS, Flutter, Expo, Vue.js, Python, Docker, React, and React Native to turn visionary ideas into reality.',
       icon: 'mdi-robot', // Represents AI and advanced tech
     },
   ]
