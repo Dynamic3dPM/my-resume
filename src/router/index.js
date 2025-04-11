@@ -56,10 +56,10 @@ router.isReady().then(() => {
   console.log('Router is ready. Current routes:', router.getRoutes()) // Debug: Log all routes
 })
 
-// Set document title based on route
-router.beforeEach((to, from, next) => {
-  document.title = to.meta.title || 'My Resume'
-  next()
-})
+// Remove or comment out the document title logic
+// router.beforeEach((to, from, next) => {
+//   document.title = to.meta.title || 'My Resume'
+//   next()
+// })
 
 export default router

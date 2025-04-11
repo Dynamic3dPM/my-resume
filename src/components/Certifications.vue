@@ -7,7 +7,7 @@
           Bridging the Gap Between Teams
         </p>
         <p class="my-4 text-body-1 text-medium-emphasis">
-          As a PMP and Security+ certified project manager with full-stack development skills and 20 years of military service as a CW3, I ensure projects are delivered on time and to specification by speaking the language of developers and stakeholders alike.
+          As a PMP and Security+ certified project manager with full-stack development skills and 20 years of military service, I ensure projects are delivered on time and to specification by speaking the language of developers and stakeholders alike.
         </p>
         <v-list-item
           v-for="(item, i) in features"
