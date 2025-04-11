@@ -1,3 +1,0 @@
-name = "my-resume-worker"
-main = "src/worker.js"
-compatibility_date = "2025-04-08"
