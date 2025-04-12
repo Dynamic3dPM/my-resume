@@ -9,7 +9,10 @@
         :interval="5000"
         hide-delimiters
         height="auto"
-        class="mb-6"
+        class="mb-6 custom-carousel"
+        show-arrows
+        @mouseenter="pauseCarousel"
+        @mouseleave="resumeCarousel"
       >
         <v-carousel-item
           v-for="(testimonial, index) in testimonials"
@@ -19,7 +22,7 @@
         >
           <v-row justify="center">
             <v-col cols="12" class="text-center">
-              <p class="text-sm-h5 text-subtitle-1 text-medium-emphasis mt-2 mb-4">
+              <p class="text-sm-h5 text-subtitle-1 text-medium-emphasis mt-2 mb-4 testimonial-content">
                 "{{ testimonial.content }}"
               </p>
               <v-list-item
@@ -42,18 +45,30 @@
 import { ref, onMounted } from 'vue'
 
 const testimonials = ref([])
+const isPaused = ref(false)
+
+const pauseCarousel = () => {
+  isPaused.value = true
+}
+
+const resumeCarousel = () => {
+  isPaused.value = false
+}
 
 onMounted(async () => {
   try {
     const response = await fetch('https://59g9zt5bzf.execute-api.us-east-1.amazonaws.com/dev/testimonials')
     if (response.ok) {
-      testimonials.value = await response.json()
+      const data = await response.json()
+      testimonials.value = Array.isArray(data) ? data : []
       console.log('Fetched testimonials:', testimonials.value)
     } else {
-      console.error('Failed to fetch testimonials:', response.status)
+      console.error('Failed to fetch testimonials:', response.status, response.statusText)
+      testimonials.value = []
     }
   } catch (error) {
     console.error('Error fetching testimonials:', error)
+    testimonials.value = []
   }
 })
 </script>
@@ -78,6 +93,23 @@ onMounted(async () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 200px; /* Ensures space for content */
+  min-height: 300px; /* Ensures space for content */
+  flex-direction: column;
+}
+
+/* Ensure the carousel has enough space at the bottom */
+.custom-carousel {
+  position: relative;
+  padding-bottom: 20px; /* Space for content */
+}
+
+/* Ensure the testimonial content has enough margin to avoid overlap */
+.testimonial-content {
+  margin-bottom: 24px; /* Add space below the testimonial text */
+}
+
+/* Ensure arrows are hidden while keeping transitions */
+.custom-carousel >>> .v-carousel__controls {
+  display: none;
 }
 </style>
