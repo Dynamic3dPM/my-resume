@@ -149,7 +149,7 @@
     {
       title: 'PMP Audio Study Guide',
       subtitle: 'Mobile App for PMP Exam Prep',
-      duration: 'Past Project (Completed)',
+      duration: 'Past Project (Completed) 2023',
       status: 'past',
       image: pmpStudyGuideImage,
       highlights: [
@@ -168,7 +168,7 @@
     {
       title: 'Ask Chief App',
       subtitle: 'Global Tool for U.S. Army Soldiers',
-      duration: 'Past Project (Completed)',
+      duration: 'Past Project (Completed) 2021 - 2022',
       status: 'past',
       image: askChiefImage,
       highlights: [

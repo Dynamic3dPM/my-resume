@@ -73,8 +73,6 @@
 import { useTheme } from 'vuetify';
 import { ref } from 'vue';
 
-// Dynamically import the background image
-const backgroundImage = new URL('../assets/1696383167109.jpeg', import.meta.url).href;
 
 const theme = useTheme();
 

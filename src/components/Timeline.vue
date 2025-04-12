@@ -86,7 +86,7 @@ const events = [
   .v-card {
     position: relative;
     z-index: 1;
-    background-color: #black;
+    background-color: #000000;
   }
 }
 
