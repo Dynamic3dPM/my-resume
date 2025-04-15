@@ -46,6 +46,26 @@
             </p>
           </template>
         </v-list-item>
+        <!-- Schooling Feature -->
+        <v-list-item class="px-0 py-2">
+          <template #title>
+            <p
+              class="text-body-2 font-weight-bold pb-2"
+              :style="{ fontSize: textSize }"
+            >
+              <v-icon
+                class="mr-2"
+                color="primary"
+                icon="mdi-school"
+                size="small"
+              />
+              BS: Interdisciplinary Studies
+            </p>
+          </template>
+          <template #subtitle>
+            <span>Focus: Computer Science and Business (Graduation: July 2025)</span>
+          </template>
+        </v-list-item>
       </v-col>
 
       <!-- Background Image -->
